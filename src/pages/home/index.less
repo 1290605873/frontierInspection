@@ -1,0 +1,38 @@
+@import '../../style/common.less';
+.main{
+    .home-top{
+        height: 68%;
+       .cameraNew{
+            border:1px solid @borderColor;padding:5px;width: 100%;
+            height:calc(100% - 32px - 10px);/* min-height: 300px;  */ margin-top:10px;
+        } 
+        .InfoTit{
+            padding-left:10px;position: relative;
+            span{position: absolute; right: 0px;}
+        } 
+        .snap{
+            display: inline-block;width:50%;
+            .snapBox{
+                margin: 0 0 10px 10px;}
+        }
+    }
+    .home-footer{
+        height: 32%;
+        .snapDiv{
+            display: flex;flex-wrap: wrap;padding:0px;height:calc(100% - 32px);
+            li{ 
+                width:calc(100% / 7); min-height:100%;display: inline-block;
+                padding:5px;
+                img{ 
+                    width: auto;  height: auto;  max-width: 100%; border:1px solid @borderColor; max-height: 100%;padding:5px
+                }
+            }
+        }
+    }   
+ }
+ .col{
+     height:100%
+ }
+ .InfoTit{
+    height: 32px;line-height: 32px;
+}
